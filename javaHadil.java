@@ -48,12 +48,13 @@ boolean isActive;
             System.out.println("name is         :  " + name);
             System.out.println("age is          :  " + age);
             System.out.println("email is        :  " + email);
-            System.out.println("activety status :" + isActive);
+            System.out.println("activety status :" + (isActive? "active": "not active"));
 // Print user information in a nice format
         }
         // Main method for testing
         public static void main(String[] args) {
-UserInfo u1 = new UserInfo("hadil", "had33l-@outlook.com", "20", true);
+            javaHadil outer = new javaHadil();
+UserInfo u1 = outer.new UserInfo("hadil", "had33l-@outlook.com", "20", true);
 
 // Display their information
 // Test your getters and setters
