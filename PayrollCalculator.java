@@ -37,15 +37,27 @@ public class PayrollCalculator {
     // Method to calculate tax deduction based on pay brackets
     public static double calculateTaxDeduction(double grossPay, boolean
             hasHealthInsurance) {
+        double tax;
 // Tax brackets using nested if-else:
         if (grossPay>0 && grossPay<=500){
-          double  tax = grossPay
+            tax = grossPay*(10/100);
+        }// $501-1000: 15% tax
+else if (grossPay>500 && grossPay<=1000){
+            tax = grossPay*(15/100);
+        }// $1001-2000: 20% tax
+        else if (grossPay>1000 && grossPay<=2000){
+              tax = grossPay*(20/100);
+        } else {
+             tax = grossPay * 25/100;
         }
-// $0-500: 10% tax
-// $501-1000: 15% tax
-// $1001-2000: 20% tax
+        if (hasHealthInsurance == true) {// If hasHealthInsurance is true, reduce tax by $50
+
+            tax = (tax - 50);
+        }
+        return Math.max( tax, 0);
+
 // Above $2000: 25% tax
-// If hasHealthInsurance is true, reduce tax by $50
+
 // Return total tax amount
     }
     // Method to process multiple employees and find statistics
