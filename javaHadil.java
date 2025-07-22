@@ -34,8 +34,8 @@ boolean isActive;
         public String setEmail(String e){
              email = e;
         }
-        public int setAge(int age ){
-            a = age;
+        public int setAge(int a ){
+            age = a;
         }
         public boolean setActivity(boolean i){
             i = isActive;
@@ -53,7 +53,8 @@ boolean isActive;
         }
         // Main method for testing
         public static void main(String[] args) {
-// Create 3 different users
+UserInfo u1 = new UserInfo("hadil", "had33l-@outlook.com", "20", true);
+
 // Display their information
 // Test your getters and setters
 
