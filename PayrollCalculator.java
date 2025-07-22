@@ -3,18 +3,44 @@ public class PayrollCalculator {
     public static double calculateWeeklyPay(String employeeType, double
             hoursWorked, double hourlyRate) {
 // Employee types: "FULL_TIME", "PART_TIME", "CONTRACTOR", "INTERN"
-// Use switch case for different rules:
-// FULL_TIME: Regular pay for 40 hours, overtime (1.5x) for hours >
-        40
-// PART_TIME: Regular pay, no overtime, max 25 hours
-// CONTRACTOR: Flat rate, no overtime rules
-// INTERN: 20% discount from hourly rate, max 20 hours
-// Handle invalid employee types and negative values
+        switch (){
+            // FULL_TIME: Regular pay for 40 hours, overtime (1.5x) for hours >
+            case 1:
+                if (hoursWorked <= 40 ){
+                    double salary= hourlyRate * hoursWorked;
+                }else{
+                   double overtimeSal = (hourlyRate * 40)+ ((hoursWorked - 40)*hourlyRate);
+
+                }
+                break;
+
+            case 2:
+                // PART_TIME: Regular pay, no overtime, max 25 hours
+                double salary= hourlyRate * Math.min(hoursWorked,25);
+                break;
+
+            case 3:
+                // CONTRACTOR: Flat rate, no overtime rules
+                salary = hourlyRate * hoursWorked;
+                break;
+
+            case 4:
+                // INTERN: 20% discount from hourly rate, max 20 hours
+                salary = Math.max(hoursWorked,20) * (hourlyRate-(20/100));
+                break;
+            default:
+                System.out.println("Invalid input " );
+                return 0;
+        }
+
     }
     // Method to calculate tax deduction based on pay brackets
     public static double calculateTaxDeduction(double grossPay, boolean
             hasHealthInsurance) {
 // Tax brackets using nested if-else:
+        if (grossPay>0 && grossPay<=500){
+          double  tax = grossPay
+        }
 // $0-500: 10% tax
 // $501-1000: 15% tax
 // $1001-2000: 20% tax
