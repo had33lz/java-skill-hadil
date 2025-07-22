@@ -54,7 +54,7 @@ boolean isActive;
         // Main method for testing
         public static void main(String[] args) {
             javaHadil outer = new javaHadil();
-UserInfo u1 = outer.new UserInfo("hadil", "had33l-@outlook.com", "20", true);
+UserInfo u1 = outer.new UserInfo("hadil", "had33l-@outlook.com", 20,true);
 
 // Display their information
 // Test your getters and setters
