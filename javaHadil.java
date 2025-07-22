@@ -31,6 +31,10 @@ boolean isActive;
 
 // Create a method that displays user info nicely formatted
         public void displayInfo() {
+            System.out.println("name is         :  " + name);
+            System.out.println("age is          :  " + age);
+            System.out.println("email is        :  " + email);
+            System.out.println("activety status :" + isActive);
 // Print user information in a nice format
         }
         // Main method for testing
