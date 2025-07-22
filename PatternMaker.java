@@ -22,12 +22,14 @@ public class PatternMaker {
     public static void printMultiplicationTable(int number, int limit) {
 // Print: number x 1 = result, number x 2 = result, etc.
 // Up to the limit
+        for (int i = 1; i <= limit; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
     }
 
     public static void main(String[] args) {
-        printNumberTriangle(5);
-        //System.out.println();
-      //  printMultiplicationTable(7, 10);
+        printNumberTriangle(9);
+        System.out.println(); // spacer
+        printMultiplicationTable(2, 6);
     }
-
 }
