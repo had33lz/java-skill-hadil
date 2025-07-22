@@ -28,6 +28,19 @@ boolean isActive;
             return isActive;
         }
 
+        public String setName(){
+            return name;
+        }
+        public String setEmail(){
+            return email;
+        }
+        public int setAge(){
+            return age;
+        }
+        public boolean setActivity(){
+            return isActive;
+        }
+
 
 // Create a method that displays user info nicely formatted
         public void displayInfo() {
