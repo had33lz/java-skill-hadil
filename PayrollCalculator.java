@@ -65,6 +65,7 @@ else if (grossPay>500 && grossPay<=1000){
                                       double[] rates, String[] names) {
 // Calculate pay for each employee
 // Find: highest paid employee, lowest paid employee, average pay
+
 // Count how many employees worked overtime (>40 hours)
 // Display results in a formatted table
 // Handle arrays of different lengths gracefully
