@@ -1,6 +1,6 @@
 public class javaHadil {
 
-    public class UserInfo {
+    public  class UserInfo {
 String name, email;
 int age;
 boolean isActive;
