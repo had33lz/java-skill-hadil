@@ -55,8 +55,8 @@ boolean isActive;
         public static void main(String[] args) {
             javaHadil outer = new javaHadil();
             UserInfo u1 = outer.new UserInfo("hadil", "had33l-@outlook.com", 20,true);
-            UserInfo u2 = outer.new UserInfo("hadil", "had33l-@outlook.com", 20,true);
-            UserInfo u3 = outer.new UserInfo("hadil", "had33l-@outlook.com", 20,true);
+            UserInfo u2 = outer.new UserInfo("mariam", "mariam-@outlook.com", 45,false);
+            UserInfo u3 = outer.new UserInfo("danial", "danial-@outlook.com", 40,true);
 
 
 // Display their information
