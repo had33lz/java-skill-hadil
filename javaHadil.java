@@ -28,17 +28,17 @@ boolean isActive;
             return isActive;
         }
 
-        public String setName(String n){
+        public void setName(String n){
             name = n;
         }
-        public String setEmail(String e){
+        public void setEmail(String e){
              email = e;
         }
-        public int setAge(int a ){
+        public void setAge(int a ){
             age = a;
         }
-        public boolean setActivity(boolean i){
-            i = isActive;
+        public void setActivity(boolean i){
+            isActive = i;
 
         }
 
